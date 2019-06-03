@@ -12,13 +12,22 @@
   color: #5bc49f;
 }
 
-input{
-  font-size: 3rem;
-  width: 2em;
+.keyboard-img{
+  width: 95%;
+  margin: 0 auto;
+}
+img{
+  width: 100%;
+  max-width: 700px;
 }
 
-img{
-  max-width: 700px;
+ruby{
+  font-size: 3rem;
+}
+
+.input-group{
+  height: 0;
+  overflow: hidden;
 }
 
 .input-false{
@@ -27,8 +36,4 @@ img{
 
 .input-true{
   color: #5bc49f;
-}
-
-ruby{
-  font-size: 3rem;
 }

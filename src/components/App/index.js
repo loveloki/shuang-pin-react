@@ -5,6 +5,7 @@ import scheme from '../../constants/scheme';
 import dict from '../../constants/dict'
 import utils from '../../constants/utils'
 import shuangImg from '../../constants/img/xiaohe.png';
+import DisplayInput from '../DisplayInput';
 
 //随机返回汉字：[声母， 韵母， 汉字]
 const randomHanZi = () => {
@@ -127,14 +128,13 @@ const App = () => {
       onClick={onAppClick}>
       <header className="App-header">
         <div className='random-hanzi'>
-          <span>请输入：</span>
           <ruby>
             {hanZi}<rt>{sheng + yun}</rt>  
           </ruby> 
         </div> 
-        {/* {inputValue
-        ? inputValue
-        : "请输入拼音"} */}
+        <DisplayInput
+          value={inputValue}
+          isInputRight={isInputRight()}/>
         <div className='input-group'>
           <input
             type="text"
@@ -143,13 +143,11 @@ const App = () => {
             onKeyUp={(event) => handleKeyUp(event)}
             ref={inputEl}
             autoFocus
-        />
-            {isInputRight
-              ?<span className='input-true' role="img" aria-label="right-input">✔️</span>
-              :<span className='input-false' role="img" aria-label="wrong-input">❌</span>
-            }
+          />
         </div>
-        <img src={shuangImg} alt={name}/>
+        <div className='keyboard-img'>
+          <img src={shuangImg} alt={name}/>
+        </div>
       </header>
     </div>
   );
