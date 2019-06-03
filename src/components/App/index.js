@@ -1,6 +1,5 @@
-import React, {useState} from 'react';
+import React, { useState, useRef } from 'react';
 import './index.css';
-import InputGroup from '../InputGroup'
 import config from '../../constants/config';
 import scheme from '../../constants/scheme';
 import dict from '../../constants/dict'
@@ -35,6 +34,7 @@ const App = () => {
   const [yun, SetYun] = useState(str[1]);
   const [hanZi, SetHanZi] = useState(str[2]);
   const [inputValue, SetInputValue] = useState("");
+  const inputEl = useRef(null);
   const name = Object.keys(scheme);
 
 
@@ -117,8 +117,14 @@ const App = () => {
     }
   }
 
+  const onAppClick = () => {
+    inputEl.current.focus();
+  }
+
   return (
-    <div className="App">
+    <div
+      className="App"
+      onClick={onAppClick}>
       <header className="App-header">
         <div className='random-hanzi'>
           <span>请输入：</span>
@@ -129,12 +135,20 @@ const App = () => {
         {/* {inputValue
         ? inputValue
         : "请输入拼音"} */}
-        <InputGroup
-          inputValue={inputValue}
-          onChange={(event) => handleChange(event)}
-          onKeyUp={(event) => handleKeyUp(event)}
-          isInputRight={isInputRight()}
+        <div className='input-group'>
+          <input
+            type="text"
+            value={inputValue}
+            onChange={(event) => handleChange(event)}
+            onKeyUp={(event) => handleKeyUp(event)}
+            ref={inputEl}
+            autoFocus
         />
+            {isInputRight
+              ?<span className='input-true' role="img" aria-label="right-input">✔️</span>
+              :<span className='input-false' role="img" aria-label="wrong-input">❌</span>
+            }
+        </div>
         <img src={shuangImg} alt={name}/>
       </header>
     </div>
