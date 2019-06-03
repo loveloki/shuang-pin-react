@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/shuang-pin-react/precache-manifest.4942a407286682276dbf99a69706f305.js"
+  "/shuang-pin-react/precache-manifest.017c77613befb1d64e9c16ed8af4ac71.js"
 );
 
 self.addEventListener('message', (event) => {
