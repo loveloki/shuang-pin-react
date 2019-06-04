@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "06edfc0fd6e75c1d721fa2443e6e2098",
+    "revision": "b2b5c928193f0455f8e887ff0aecdac0",
     "url": "/shuang-pin-react/index.html"
   },
   {
-    "revision": "c03849a7d7de5063363f",
+    "revision": "7a3f2b38ff8149ee509f",
     "url": "/shuang-pin-react/static/css/main.f0d3eff4.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/shuang-pin-react/static/js/2.f0910273.chunk.js"
   },
   {
-    "revision": "c03849a7d7de5063363f",
-    "url": "/shuang-pin-react/static/js/main.503524df.chunk.js"
+    "revision": "7a3f2b38ff8149ee509f",
+    "url": "/shuang-pin-react/static/js/main.e2bce100.chunk.js"
   },
   {
     "revision": "330ed018a903ed46cc56",
