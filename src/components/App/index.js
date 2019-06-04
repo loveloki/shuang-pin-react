@@ -136,7 +136,7 @@ const App = () => {
           value={inputValue}
           isInputRight={isInputRight()}/>
         <div className='input-group'>
-          <input
+          <textarea
             type="text"
             value={inputValue}
             onChange={(event) => handleChange(event)}
