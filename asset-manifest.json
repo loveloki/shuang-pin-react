@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/shuang-pin-react/static/css/main.f0d3eff4.chunk.css",
-    "main.js": "/shuang-pin-react/static/js/main.e2bce100.chunk.js",
-    "main.js.map": "/shuang-pin-react/static/js/main.e2bce100.chunk.js.map",
+    "main.css": "/shuang-pin-react/static/css/main.ed4cbf67.chunk.css",
+    "main.js": "/shuang-pin-react/static/js/main.4cafab3a.chunk.js",
+    "main.js.map": "/shuang-pin-react/static/js/main.4cafab3a.chunk.js.map",
     "runtime~main.js": "/shuang-pin-react/static/js/runtime~main.e241b99a.js",
     "runtime~main.js.map": "/shuang-pin-react/static/js/runtime~main.e241b99a.js.map",
     "static/js/2.f0910273.chunk.js": "/shuang-pin-react/static/js/2.f0910273.chunk.js",
     "static/js/2.f0910273.chunk.js.map": "/shuang-pin-react/static/js/2.f0910273.chunk.js.map",
     "index.html": "/shuang-pin-react/index.html",
-    "precache-manifest.293ad0020bef9fe0a0320f530d676f65.js": "/shuang-pin-react/precache-manifest.293ad0020bef9fe0a0320f530d676f65.js",
+    "precache-manifest.0ba9798849fbb1ef7a3b1c8b148d0fee.js": "/shuang-pin-react/precache-manifest.0ba9798849fbb1ef7a3b1c8b148d0fee.js",
     "service-worker.js": "/shuang-pin-react/service-worker.js",
-    "static/css/main.f0d3eff4.chunk.css.map": "/shuang-pin-react/static/css/main.f0d3eff4.chunk.css.map",
+    "static/css/main.ed4cbf67.chunk.css.map": "/shuang-pin-react/static/css/main.ed4cbf67.chunk.css.map",
     "static/media/xiaohe.png": "/shuang-pin-react/static/media/xiaohe.dafe415c.png"
   }
 }
