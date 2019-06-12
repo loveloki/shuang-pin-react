@@ -6,6 +6,8 @@ import dict from '../../constants/dict'
 import utils from '../../constants/utils'
 import shuangImg from '../../constants/img/xiaohe.png';
 import DisplayInput from '../DisplayInput';
+import Tips from './../Tips';
+import Header from '../Header';
 
 //随机返回汉字：[声母， 韵母， 汉字]
 const randomHanZi = () => {
@@ -37,6 +39,7 @@ const App = () => {
   const [inputValue, SetInputValue] = useState("");
   const inputEl = useRef(null);
   const name = Object.keys(scheme);
+  const tips = scheme[name].tips;
 
 
   const handleChange = (event) => {
@@ -88,6 +91,15 @@ const App = () => {
     return trueSheng + trueYun;
   }
 
+  const isTyping = () => {
+    const pinYin = getPinYin();    
+
+    if (inputValue === pinYin[0]) {
+      return true;
+    }
+
+    return false;
+  }
   const isInputRight = () => {
     const pinYin = getPinYin();    
 
@@ -126,7 +138,9 @@ const App = () => {
     <div
       className="App"
       onClick={onAppClick}>
-      <header className="App-header">
+      <Header />
+      <main className="main-content">
+        <Tips tips={tips}/>
         <div className='random-hanzi'>
           <ruby>
             {hanZi}<rt>{sheng + yun}</rt>  
@@ -134,6 +148,7 @@ const App = () => {
         </div> 
         <DisplayInput
           value={inputValue}
+          isTyping={isTyping()}
           isInputRight={isInputRight()}/>
         <div className='input-group'>
           <textarea
@@ -148,7 +163,7 @@ const App = () => {
         <div className='keyboard-img'>
           <img src={shuangImg} alt={name}/>
         </div>
-      </header>
+      </main>
     </div>
   );
 }
